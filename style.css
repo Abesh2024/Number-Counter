@@ -37,6 +37,7 @@ body {
     width: 200px;
     /* border: 2px solid blue; */
     border-radius: 12%;
+    box-shadow: 10px 15px 20px grey;
 }
 
 #text {
@@ -89,7 +90,13 @@ body {
 
 @keyframes number {
     0% {
-        transform: translateY(-10px);
+        transform: translateY(-12px);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    70% {
+        transform: translateY(-5px);
     }
     100% {
         transform: translateY(0);

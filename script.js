@@ -6,8 +6,11 @@ let button3 = document.getElementById("btn3");
 
 let count = 0;
 button1.addEventListener("click", ()=>{
-    count -=1;
+    if(count > 0){
+        count -=1;
     para.innerText = count;
+    }
+    
     para.classList.add("animate");
     setTimeout(()=>{
         para.classList.remove("animate");
